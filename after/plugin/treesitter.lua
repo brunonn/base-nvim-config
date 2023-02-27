@@ -1,5 +1,6 @@
 
-require 'nvim-treesitter.install'.prefer_git = false;
+-- for windows
+-- require 'nvim-treesitter.install'.prefer_git = false;
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
   ensure_installed = { "help", "javascript", "typescript", "lua" },

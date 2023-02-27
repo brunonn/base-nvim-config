@@ -40,38 +40,12 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  use 'nvim-tree/nvim-web-devicons'
+  use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+  use 'mg979/vim-visual-multi'
 
-
-
-
-
+  use({'prettier/vim-prettier', run = 'yarn install --frozen-lockfile --production' })
 end)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
