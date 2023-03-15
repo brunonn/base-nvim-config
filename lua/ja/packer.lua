@@ -44,16 +44,16 @@ return require('packer').startup(function(use)
   use 'mg979/vim-visual-multi'
 
   use({'prettier/vim-prettier', run = 'yarn install --frozen-lockfile --production' })
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
+  use {'tpope/vim-commentary' }
+  use("tpope/vim-fugitive")
   use {
       'nvim-tree/nvim-tree.lua',
       requires = {
           'nvim-tree/nvim-web-devicons', -- optional, for file icons
       },
   }
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
-
-  use {'tpope/vim-commentary' }
-  use("tpope/vim-fugitive")
 
   end)
 

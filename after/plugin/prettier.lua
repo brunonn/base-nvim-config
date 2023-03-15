@@ -1,5 +1,5 @@
 
 
--- A-V
-vim.keymap.set('n', '<ž>', ":Prettier <CR>", {})
+-- A-F
+vim.keymap.set('n', 'ž', ":Prettier <CR>", {})
 
